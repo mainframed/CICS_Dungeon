@@ -17,7 +17,7 @@ lies ahead, but you're determined to find out.
 
 ![Game](img/dungeon.gif)
 
-After instalation you can run the game by running either command at the
+After instalation you can run the game by using either command at the
 TSO READY prompt:
 
 - `DUNGEON`
@@ -36,9 +36,7 @@ through **F4** keys for movement:
 Clearing a floor levels up your character. There are weapons `)`,
 armor `[` and potions `!` to collect. There are also enemies sowatchout!
 
-[img of death]
-
-### Exit the game
+### Exiting the game
 
 To exit the game you can press ***F3*** on the title screen to exit, 
 this will take you to a blank screen. 
