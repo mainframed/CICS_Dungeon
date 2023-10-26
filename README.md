@@ -48,8 +48,6 @@ Once at the blank screen type `KSSF` to exit KICKS.
 
 ## Instalation
 
-### Easy install
-
 The file ***DUNGEON.jcl*** contains the entire game. If you're running the 
 MVS/CE KICKS docker container you can installit by running: `cat DUNGEON.jcl|ncat localhost 3505` where `localhost` is the hostname of you system running KICKS. You can find a copy of the KICKS docker container
 here: [KICKS](https://hub.docker.com/r/mainframed767/kicks). If you're already running docker you can run the script `docker_run.sh` to deploy a KICKS container. 
