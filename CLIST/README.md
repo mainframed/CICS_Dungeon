@@ -1,0 +1,1 @@
+This folder includes a simple C list which calls the KICKS clist setting the correct PPT and PCT. 

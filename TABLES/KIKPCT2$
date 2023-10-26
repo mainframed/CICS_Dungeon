@@ -1,0 +1,68 @@
+         PRINT GEN
+         KIKPCT TYPE=INITIAL,SUFFIX=1$
+*
+*        KICKS SUPPLIED TRANACTIONS
+*
+*GOOD MORNING MESSAGE (PRESS CLEAR TO ESCAPE)
+*     SET REFRESH TIME (IN SECONDS) WITH TWASIZE
+*     MIN  3 SECS, MAX 60 SECONDS, OTHERWISE NO REFRESH
+*          6 SEEMS TO WORK WELL IN TERMS OF SYNC
+*            WITH FLASHING 'FOR TSO' -- W/QWSPLUS
+*
+KSGM     KIKPCT TYPE=ENTRY,TRANSID=KSGM,PROGRAM=DUNGEON
+KSG2     KIKPCT TYPE=ENTRY,TRANSID=KSG2,PROGRAM=KSGMPGM,TWASIZE=6
+* FOLLOWING IS VERSION WITH A FIXED SET OF COLORS FOR TESTING...
+KSG1     KIKPCT TYPE=ENTRY,TRANSID=KSG1,PROGRAM=KSGMPGM,TWASIZE=1
+*
+*SIGN OFF (SHUTDOWN KICKS)
+*
+KSSF     KIKPCT TYPE=ENTRY,TRANSID=KSSF,PROGRAM=KSSFPGM
+CSSF     KIKPCT TYPE=ENTRY,TRANSID=CSSF,PROGRAM=KSSFPGM
+LOGO     KIKPCT TYPE=ENTRY,TRANSID=LOGO,PROGRAM=KSSFPGM
+K999     KIKPCT TYPE=ENTRY,TRANSID=K999,PROGRAM=K999PGM
+*
+*CRLP TERMINAL CONTROL TRANSACTION
+*
+CRLP     KIKPCT TYPE=ENTRY,TRANSID=CRLP,PROGRAM=CRLPPGM
+*
+*COMMAND LEVEL DEBUGGER
+*
+KEDF     KIKPCT TYPE=ENTRY,TRANSID=KEDF,PROGRAM=KEDFPGM
+CEDF     KIKPCT TYPE=ENTRY,TRANSID=CEDF,PROGRAM=KEDFPGM
+*
+*QUEUE BROWSER
+*
+KEBR     KIKPCT TYPE=ENTRY,TRANSID=KEBR,PROGRAM=KEBRPGM
+CEBR     KIKPCT TYPE=ENTRY,TRANSID=CEBR,PROGRAM=KEBRPGM
+*
+*MASTER TERMINAL TRANSACTION
+*
+KSMT     KIKPCT TYPE=ENTRY,TRANSID=KSMT,PROGRAM=KSMTPGM
+KEMT     KIKPCT TYPE=ENTRY,TRANSID=KEMT,PROGRAM=KSMTPGM
+CSMT     KIKPCT TYPE=ENTRY,TRANSID=CSMT,PROGRAM=KSMTPGM
+CEMT     KIKPCT TYPE=ENTRY,TRANSID=CEMT,PROGRAM=KSMTPGM
+*
+*
+********************************************
+*         _______  ___   _______  _______                               
+*        |       ||   | |       ||       |                              
+*        |       ||   | |       ||  _____|                              
+*        |       ||   | |       || |_____                               
+*        |      _||   | |      _||_____  |                              
+*        |     |_ |   | |     |_  _____| |                              
+*        |_______||___| |_______||_______|                              
+*         ______   __   __  __    _  _______  _______  _____  __    _ 
+*        |      | |  | |  ||  |  | ||       ||       ||     ||  |  | |
+*        |  _    ||  | |  ||   |_| ||    ___||    ___||  _  ||   |_| |
+*        | | |   ||  |_|  ||       ||   | __ |   |___ | | | ||       |
+*        | |_|   ||       ||  _    ||   ||  ||    ___|| |_| ||  _    |
+*        |       ||       || | |   ||   |_| ||   |___ |     || | |   |
+*        |______| |_______||_|  |__||_______||_______||_____||_|  |__|
+*        
+DNGN     KIKPCT TYPE=ENTRY,TRANSID=DNGN,PROGRAM=TITLEPGM        
+RGUE     KIKPCT TYPE=ENTRY,TRANSID=RGUE,PROGRAM=DUNGEON        
+DEAT     KIKPCT TYPE=ENTRY,TRANSID=DEAT,PROGRAM=DEATHPGM
+
+********************************************
+         KIKPCT TYPE=FINAL
+         END
