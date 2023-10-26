@@ -56,8 +56,8 @@ If you're running any other builds (TK4-, TK5, etc) you can run the script `rele
 
 **YOU MUST PASS ALL 4 ARGUMENT**
 
-- Arg 1: KICKS HLQ. i.e. If you're KICKS datasets are `HERC01.KICKSSYS.V1R5M0.GCCCOPY` the arg 1 would be `HERC01`
-- Arg 2: the dataset that contains `PDSLOAD`, if this program is found in `SYS2.LOADLIB` then arg 2 would be `SYS2.LINKLIB`
+- Arg 1: KICKS HLQ. i.e. If your KICKS datasets are `HERC01.KICKSSYS.V1R5M0.GCCCOPY` then arg 1 would be `HERC01`
+- Arg 2: the dataset that contains `PDSLOAD`, if this program is found in `SYS2.LINKLIB` then arg 2 would be `SYS2.LINKLIB`
 - Arg 3: The HLQ for GCCMVS. If GCC is stored in `GCC.V85.*` pass this argument `GCC.V85`
 - Arg 4: The HLQ for PDPCLIB. If the PDP C Library is stored in `PDPCLIB.V85.*` then you would pass the argument `PDPCLIB.V85`
 
