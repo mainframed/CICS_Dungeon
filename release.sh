@@ -106,7 +106,7 @@ done
 # Add BMS tables
 
 for i in TABLES/*; do
-  if [[ "$i" == 'TABLES/README.MD' ]]; then
+  if [[ "$i" == 'TABLES/README.md' ]]; then
     continue
   fi  
     m=${i%.*}
