@@ -13,18 +13,26 @@
 if [ -z "$1" ]
   then
     KICKSHLQ='KICKS'
+  else
+    KICKSHLQ=$1
 fi
 if [ -z "$2" ]
   then
     LOADHLQ='SYSC.LINKLIB'
+  else
+    LOADHLQ=$2
 fi
 if [ -z "$3" ]
   then
     GCCPREF='GCC'
+  else
+    GCCPREF=$3
 fi
 if [ -z "$4" ]
   then
     PDPPREF='PDPCLIB'
+  else
+    PDPPREF=$4
 fi
 
 
