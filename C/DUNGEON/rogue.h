@@ -30,7 +30,7 @@
 #define NEUTRAL_WHITE   0xf7
 #define BLACK           0xf8
 // The following are not supported by all emulators
-#define DEEP_BLUE	      0xf9
+#define DEEP_BLUE       0xf9
 #define ORANGE          0xfa
 #define PURPLE          0xfb
 #define PALE_GREEN      0xfc
