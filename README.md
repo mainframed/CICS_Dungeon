@@ -63,5 +63,5 @@ If you're running any other builds (TK4-, TK5, etc) you need to change the code 
 - Arg 5: the username used to submit the job, likely `HERC01`
 - Arg 6: the password for that user, likely `CUL8TR`
 
-With all that our final release command would be `./release HERC01 SYS2.LINKLIB GCC PDPCLIB HERC01 CUL8TR ` which will generate the JCL to install the game. 
+With all that our final release command would be `./release.sh HERC01 SYS2.LINKLIB GCC PDPCLIB HERC01 CUL8TR ` which will generate the JCL to install the game. 
 
