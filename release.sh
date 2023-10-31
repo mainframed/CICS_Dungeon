@@ -34,6 +34,18 @@ if [ -z "$4" ]
   else
     PDPPREF=$4
 fi
+if [ -z "$5" ]
+  then
+    USERNAME='IBMUSER'
+  else
+    USERNAME=$5
+fi
+if [ -z "$6" ]
+  then
+    PASSWORD='SYS1'
+  else
+    PASSWORD=$6
+fi
 
 
 
@@ -46,10 +58,10 @@ cat << END
 //             CLASS=A,
 //             MSGCLASS=A,
 //             MSGLEVEL=(1,1),
-//             USER=IBMUSER,
-//             PASSWORD=SYS1,
+//             USER=$USERNAME,
+//             PASSWORD=$PASSWORD,
 //             REGION=7000K,
-//             NOTIFY=IBMUSER
+//             NOTIFY=$USERNAME
 //*
 //* This JCL was built for use with the MVS/CE KICKS docker
 //* container. If you're using this with a default KICKS
