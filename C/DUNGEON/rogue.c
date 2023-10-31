@@ -86,8 +86,8 @@ int main(KIKEIB *eib, mycomm *KIKCOMM) {
 
     init_screen();  
     sync_stats_between_levels(game);
-    handle_input(eib->eibaid, level, game) ;
     level = game->levels[game->current_level];
+    handle_input(eib->eibaid, level, game) ;
     render(level);
 
     sprintf(wtomsg,"RGUE - CICS SEND screen");
